@@ -123,6 +123,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &8750912 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5164107375097460743, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
+  m_PrefabInstance: {fileID: 602754797}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8750916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8750912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6b0a650cfc266d4fa09b2eba9b9028e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CastingBuffer: 0
+  Spells: []
 --- !u!1 &135595154
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +416,10 @@ PrefabInstance:
       propertyPath: SprintSpeed
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 8509660726143627709, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
+      propertyPath: PlayerCamera
+      value: 
+      objectReference: {fileID: 1513796178}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 287441232748922694, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
@@ -404,10 +427,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5164107375097460743, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
       insertIndex: -1
+<<<<<<< Updated upstream
       addedObject: {fileID: 1008873478}
     - targetCorrespondingSourceObject: {fileID: 5164107375097460743, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1008873479}
+=======
+      addedObject: {fileID: 8750916}
+>>>>>>> Stashed changes
   m_SourcePrefab: {fileID: 100100000, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
 --- !u!1 &705507993
 GameObject:
@@ -503,6 +530,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+<<<<<<< Updated upstream
 --- !u!1 &1008873474 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5164107375097460743, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
@@ -760,6 +788,13 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567893006}
   m_CullTransparentMesh: 1
+=======
+--- !u!4 &1513796178 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8565473214374976030, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
+  m_PrefabInstance: {fileID: 602754797}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
