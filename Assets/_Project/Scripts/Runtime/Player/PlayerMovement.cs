@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 Velocity;
     private Vector3 PlayerMovementInput;
     private Vector2 PlayerMouseInput;
-    private bool Sneaking = false;
+    private bool Sprinting = false;
     private float xRotation;
 
     [Header("Components Needed")]
@@ -21,9 +21,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float Sensetivity;
     [SerializeField] private float Gravity = 9.81f;
     [Space]
-    [Header("Sneaking")]
-    [SerializeField] private bool Sneak = false;
-    [SerializeField] private float SneakSpeed;
+    [Header("Sprinting")]
+    [SerializeField] private bool Sprint = false;
+    [SerializeField] private float SprintSpeed;
 
     void Start()
     {
@@ -40,16 +40,10 @@ public class PlayerMovement : MonoBehaviour
         MovePlayer();
         MoveCamera();
 
-        if (Input.GetKey(KeyCode.RightShift) && Sneak)
-        {
-            Player.localScale = new Vector3(1f, 0.5f, 1f);
-            Sneaking = true;
-        }
-        if (Input.GetKeyUp(KeyCode.RightShift))
-        {
-            Player.localScale = new Vector3(1f, 1f, 1f);
-            Sneaking = false;
-        }
+        if (Input.GetKey(KeyCode.LeftShift) && Sprint)
+            Sprinting = true;
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+            Sprinting = false;
     }
     private void MovePlayer()
     {
@@ -60,18 +54,18 @@ public class PlayerMovement : MonoBehaviour
         {
             Velocity.y = -1f;
 
-            if (Input.GetKeyDown(KeyCode.Space) && Sneaking == false)
+            if (Input.GetKeyDown(KeyCode.Space) && Sprinting == false)
             {
                 Velocity.y = JumpForce;
             }
         }
         else
         {
-            Velocity.y -= Gravity * -2f * Time.deltaTime;
+            Velocity.y -= -Gravity * -2f * Time.deltaTime;
         }
-        if (Sneaking)
+        if (Sprinting)
         {
-            Controller.Move(MoveVector * SneakSpeed * Time.deltaTime);
+            Controller.Move(MoveVector * SprintSpeed * Time.deltaTime);
         }
         else
         {
