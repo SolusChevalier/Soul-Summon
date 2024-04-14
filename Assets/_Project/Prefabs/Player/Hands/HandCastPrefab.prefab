@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3972196227017717856}
   m_Layer: 0
   m_Name: HandCastPrefab
-  m_TagString: Untagged
+  m_TagString: Hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81c8f2ee2a56ca742998e8213f1102e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HandType: 1
+  HandType: 0
 --- !u!1001 &8292541037541532247
 PrefabInstance:
   m_ObjectHideFlags: 0
