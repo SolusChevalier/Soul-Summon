@@ -23,10 +23,10 @@ public class Summoner : MonoBehaviour
     public void Start()
     {
         keyValuePairs.Clear();
-        keyValuePairs.Add(KeyCode.UpArrow, HandType.State1);
-        keyValuePairs.Add(KeyCode.RightArrow, HandType.State2);
-        keyValuePairs.Add(KeyCode.DownArrow, HandType.State3);
-        keyValuePairs.Add(KeyCode.LeftArrow, HandType.State4);
+        keyValuePairs.Add(KeyCode.UpArrow, HandType.UpArrow);
+        keyValuePairs.Add(KeyCode.RightArrow, HandType.RightArrow);
+        keyValuePairs.Add(KeyCode.DownArrow, HandType.DownArrow);
+        keyValuePairs.Add(KeyCode.LeftArrow, HandType.LeftArrow);
         SpellReady = false;
         loadedSpell = null;
     }

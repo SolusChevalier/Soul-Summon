@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.27941436, g: 0.31554097, b: 0.3679245, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.12
@@ -625,7 +625,7 @@ PrefabInstance:
       objectReference: {fileID: 770404118}
     - target: {fileID: 635595979018963629, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
       propertyPath: Spells.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 635595979018963629, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
       propertyPath: Spells.Array.data[0]
@@ -635,6 +635,14 @@ PrefabInstance:
       propertyPath: Spells.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: 04713970561a60148b19815cff1b54df, type: 2}
+    - target: {fileID: 635595979018963629, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
+      propertyPath: Spells.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6a4c334db8449dc4290f3fe78c0fb854, type: 2}
+    - target: {fileID: 635595979018963629, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
+      propertyPath: Spells.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: e4303524716f6194e88e9fa724f67044, type: 2}
     - target: {fileID: 3178069033594422934, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 131.11755

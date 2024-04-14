@@ -15,4 +15,5 @@ MonoBehaviour:
   SpellComponents: 04000000030000000200000001000000
   SpellName: dave
   SpellManaCost: 0
+  SkellyPrefab: {fileID: 1062342513416770019, guid: 418e8b04345de6f408a25636bb11416c, type: 3}
   SpellMaterial: {fileID: 2100000, guid: 975fc4d2f753c1146886f450d67cf84a, type: 2}

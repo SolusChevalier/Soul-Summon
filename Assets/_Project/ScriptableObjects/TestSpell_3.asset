@@ -15,4 +15,5 @@ MonoBehaviour:
   SpellComponents: 01000000020000000300000004000000
   SpellName: 3
   SpellManaCost: 0
+  SkellyPrefab: {fileID: 1062342513416770019, guid: 418e8b04345de6f408a25636bb11416c, type: 3}
   SpellMaterial: {fileID: 2100000, guid: af7aa38f50c65904389a5919daf2e027, type: 2}
