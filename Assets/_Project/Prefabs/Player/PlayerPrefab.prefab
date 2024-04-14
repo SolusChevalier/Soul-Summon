@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 635595979018963629}
   m_Layer: 0
   m_Name: PlayerPrefab
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,11 +135,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CastingBuffer: 0
   HandManager: {fileID: 0}
-  Skelly: {fileID: 0}
   Camera: {fileID: 261250835132650076}
+  SpellReady: 0
+  loadedSpell: {fileID: 0}
   Spells:
   - {fileID: 11400000, guid: 10e86a363aaec094a86a9c14fbc81a9a, type: 2}
   - {fileID: 11400000, guid: 04713970561a60148b19815cff1b54df, type: 2}
+  CurrentSpell: 
 --- !u!1 &6232044088309889569
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +156,7 @@ GameObject:
   - component: {fileID: 1600633610216720871}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
