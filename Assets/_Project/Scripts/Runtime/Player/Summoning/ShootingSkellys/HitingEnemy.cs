@@ -12,10 +12,16 @@ public class HitingEnemy : MonoBehaviour
 
     #region UNITY METHODS
 
+    private void Awake()
+    {
+        skellyLaunching = GetComponentInParent<SkellyLaunching>();
+    }
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
+            Debug.Log("Hit enemy");
             skellyLaunching.HitEnemy(other);
         }
     }

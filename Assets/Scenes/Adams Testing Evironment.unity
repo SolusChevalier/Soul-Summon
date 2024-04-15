@@ -570,20 +570,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2301001239940088089, guid: 84064ca4c2e5ef14690264627d3223c4, type: 3}
       propertyPath: MELEE_COUNT
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2301001239940088089, guid: 84064ca4c2e5ef14690264627d3223c4, type: 3}
       propertyPath: SPAWN_DELAY
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2301001239940088089, guid: 84064ca4c2e5ef14690264627d3223c4, type: 3}
       propertyPath: RANGED_COUNT
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 2301001239940088089, guid: 84064ca4c2e5ef14690264627d3223c4, type: 3}
-      propertyPath: rangedEnemyPrefab
-      value: 
-      objectReference: {fileID: 1062342513416770019, guid: e5c27922890cc6949a76dd94c2069616, type: 3}
     - target: {fileID: 3406237690824954660, guid: 84064ca4c2e5ef14690264627d3223c4, type: 3}
       propertyPath: m_Name
       value: SpawnPoint3PP2
@@ -767,7 +763,7 @@ GameObject:
   - component: {fileID: 956976858}
   m_Layer: 0
   m_Name: GM
-  m_TagString: Untagged
+  m_TagString: GM
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -780,12 +776,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956976856}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 903.2869, y: -203.29303, z: 145.14008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1882350760}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &956976858
 MonoBehaviour:
@@ -903,16 +899,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2301001239940088089, guid: 84064ca4c2e5ef14690264627d3223c4, type: 3}
       propertyPath: MELEE_COUNT
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2301001239940088089, guid: 84064ca4c2e5ef14690264627d3223c4, type: 3}
       propertyPath: SPAWN_DELAY
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2301001239940088089, guid: 84064ca4c2e5ef14690264627d3223c4, type: 3}
       propertyPath: RANGED_COUNT
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2301001239940088089, guid: 84064ca4c2e5ef14690264627d3223c4, type: 3}
+      propertyPath: meleeEnemyPrefab
+      value: 
+      objectReference: {fileID: 1062342513416770019, guid: 285134dd276aaea40bd79dc9fc55436d, type: 3}
     - target: {fileID: 2301001239940088089, guid: 84064ca4c2e5ef14690264627d3223c4, type: 3}
       propertyPath: rangedEnemyPrefab
       value: 
@@ -1155,7 +1155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 692838045964632528, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3178069033594422934, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1301,6 +1301,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9014131699879156693, guid: e1a707f2b4d668649a064f8213625b2c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1388,7 +1392,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 770404117}
-  - {fileID: 956976857}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1912509506
@@ -1474,7 +1477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1996225445
 Transform:
   m_ObjectHideFlags: 0
@@ -1595,16 +1598,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2301001239940088089, guid: 84064ca4c2e5ef14690264627d3223c4, type: 3}
       propertyPath: MELEE_COUNT
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2301001239940088089, guid: 84064ca4c2e5ef14690264627d3223c4, type: 3}
       propertyPath: SPAWN_DELAY
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2301001239940088089, guid: 84064ca4c2e5ef14690264627d3223c4, type: 3}
       propertyPath: RANGED_COUNT
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2301001239940088089, guid: 84064ca4c2e5ef14690264627d3223c4, type: 3}
+      propertyPath: meleeEnemyPrefab
+      value: 
+      objectReference: {fileID: 1062342513416770019, guid: 285134dd276aaea40bd79dc9fc55436d, type: 3}
     - target: {fileID: 2301001239940088089, guid: 84064ca4c2e5ef14690264627d3223c4, type: 3}
       propertyPath: rangedEnemyPrefab
       value: 
@@ -1726,3 +1733,4 @@ SceneRoots:
   - {fileID: 1996225445}
   - {fileID: 948220318}
   - {fileID: 1912509509}
+  - {fileID: 956976857}

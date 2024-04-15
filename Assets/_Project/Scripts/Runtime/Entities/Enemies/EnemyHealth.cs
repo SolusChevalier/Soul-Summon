@@ -15,7 +15,7 @@ public class EnemyHealth : MonoBehaviour
     private void Awake()
     {
         health = 100;
-        gm = GameObject.Find("GM").GetComponent<GM>();
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GM>();
     }
 
     private void Update()

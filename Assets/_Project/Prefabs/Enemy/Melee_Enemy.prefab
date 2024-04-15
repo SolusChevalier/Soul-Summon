@@ -124,11 +124,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2693aa26264169f45838339d95d00eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sightRange: 35
+  sightRange: 20
   chaseDuration: 5
   patrolPoints: []
-  patrolSpeed: 15
-  chaseSpeed: 20
+  patrolSpeed: 8
+  chaseSpeed: 12
 --- !u!114 &4627114641374795105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,8 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRange: 2
-  attackDamage: 15
-  attackCooldown: 2
+  attackDamage: 25
+  attackCooldown: 3
   player: {fileID: 0}
   playerHealth: {fileID: 0}
 --- !u!195 &7940291756153986039

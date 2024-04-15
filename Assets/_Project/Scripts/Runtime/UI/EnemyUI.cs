@@ -7,12 +7,10 @@ public class EnemyUI : MonoBehaviour
 {
     #region FIELDS
 
-    public static EnemyUI Instance { get; private set; }
-
     public int TotalEnemyCount { get; private set; }
     public TextMeshProUGUI enemyCountText;  // Reference to the TextMeshPro text
 
-    private float refreshInterval = 30f;  // Time in seconds to refresh the enemy count
+    //private float refreshInterval = 1f;  // Time in seconds to refresh the enemy count
     public GM gm;
 
     #endregion FIELDS
@@ -22,24 +20,23 @@ public class EnemyUI : MonoBehaviour
     private void Awake()
     {
         gm = GameObject.Find("GM").GetComponent<GM>();
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
+
         TotalEnemyCount = gm.enemiesToKill;
     }
 
-    private void Start()
+    private void Update()
+    {
+        enemyCountText.text = "" + (TotalEnemyCount - gm.enemiesKilled);
+    }
+
+    /*private void Start()
     {
         StartCoroutine(RefreshEnemyCountPeriodically());
-    }
+    }*/
 
     #endregion UNITY METHODS
 
-    #region METHODS
+    /*#region METHODS
 
     private IEnumerator RefreshEnemyCountPeriodically()
     {
@@ -59,5 +56,5 @@ public class EnemyUI : MonoBehaviour
         }
     }
 
-    #endregion METHODS
+    #endregion METHODS*/
 }

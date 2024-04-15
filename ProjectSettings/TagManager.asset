@@ -13,6 +13,7 @@ TagManager:
   - HandManager
   - Enemy
   - Summon
+  - GM
   layers:
   - Default
   - TransparentFX
