@@ -86,7 +86,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b99d2210e8a57aa459049389da8f65bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerCamera: {fileID: 8565473214374976030}
+  PlayerCamera: {fileID: 8701558688027452841}
   Controller: {fileID: 6326434903185258937}
   Player: {fileID: 4618245068272046678}
   Speed: 15
@@ -133,17 +133,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b0a650cfc266d4fa09b2eba9b9028e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CastingBuffer: 0
-  HandManager: {fileID: 0}
-  Camera: {fileID: 261250835132650076}
-  SpellReady: 0
-  loadedSpell: {fileID: 0}
   Spells:
   - {fileID: 11400000, guid: 10e86a363aaec094a86a9c14fbc81a9a, type: 2}
   - {fileID: 11400000, guid: 04713970561a60148b19815cff1b54df, type: 2}
   - {fileID: 11400000, guid: 6a4c334db8449dc4290f3fe78c0fb854, type: 2}
   - {fileID: 11400000, guid: e4303524716f6194e88e9fa724f67044, type: 2}
-  CurrentSpell: 
 --- !u!1 &6232044088309889569
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,11 +726,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9255ca9fbeb5234696b2092523c201f, type: 3}
---- !u!1 &261250835132650076 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8532500792979799921, guid: f9255ca9fbeb5234696b2092523c201f, type: 3}
-  m_PrefabInstance: {fileID: 8487506302847135021}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8701558688027452841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 939998353301735556, guid: f9255ca9fbeb5234696b2092523c201f, type: 3}

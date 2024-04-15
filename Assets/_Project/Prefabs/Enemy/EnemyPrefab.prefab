@@ -53,7 +53,7 @@ MonoBehaviour:
   _speed: 15
   _rotateSpeed: 95
   AnchorHeight: 1
-  SkellySpinSpeed: 5
+  SkellySpinSpeed: -5
   _maxDistancePredict: 100
   _minDistancePredict: 5
   _maxTimePrediction: 5

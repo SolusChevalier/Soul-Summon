@@ -9,9 +9,9 @@ public class EnemySpawner : MonoBehaviour
     public GameObject meleeEnemyPrefab;
     public GameObject rangedEnemyPrefab;
 
-    private const int MELEE_COUNT = 3;
-    private const int RANGED_COUNT = 3;
-    private const float SPAWN_DELAY = 2f;
+    public int MELEE_COUNT = 3;
+    public int RANGED_COUNT = 3;
+    public float SPAWN_DELAY = 2f;
 
     #endregion FIELDS
 

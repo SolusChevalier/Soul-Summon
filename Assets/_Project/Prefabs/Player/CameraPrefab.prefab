@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 2156060729831900010}
   - component: {fileID: 4746081252050010045}
   - component: {fileID: 8994330733339743046}
+  - component: {fileID: 8959025852277763325}
   m_Layer: 0
   m_Name: PlayerCam
   m_TagString: Cam
@@ -124,3 +125,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8532500792979799921}
   m_Enabled: 1
+--- !u!114 &8959025852277763325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8532500792979799921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3520b06c32259ee41a95fa78804b9bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fogShader: {fileID: 4800000, guid: 63f3fc209fa23ef40b278ad6ff01230c, type: 3}
+  fogColor: {r: 0.17812921, g: 0.17706478, b: 0.21698111, a: 0}
+  fogDensity: 0.03
+  fogOffset: 0
