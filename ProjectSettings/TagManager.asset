@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Soul
+  - Hand
+  - Terrain
+  - Environment
+  - Foliage
+  - Cam
+  - HandManager
   layers:
   - Default
   - TransparentFX
