@@ -4,7 +4,5 @@ public enum HandType
     UpArrow,
     RightArrow,
     DownArrow,
-    LeftArrow,
-    LetterA,
-    LetterB
+    LeftArrow
 }

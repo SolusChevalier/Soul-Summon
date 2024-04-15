@@ -13,11 +13,9 @@ public class EnemyAttack : MonoBehaviour
 
     public int attackDamage = 10;
     public float attackCooldown = 1.5f;
-    public float knockbackForce = 5f;
 
-    private Transform player;
-    private EntityHealth playerHealth;
-    private Rigidbody playerRigidbody;
+    public Transform player;
+    public EntityHealth playerHealth;
     private float timeSinceLastAttack = 0f;
     private EnemyController enemyController;
     private bool nextAttackIsLeft = true;
@@ -26,26 +24,29 @@ public class EnemyAttack : MonoBehaviour
 
     #region UNITY METHODS
 
-    private void Start()
+    private void Awake()
     {
         enemyController = GetComponent<EnemyController>();
 
-        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
-        if (playerObject)
+        GameObject[] playerObject = GameObject.FindGameObjectsWithTag("Player");
+        foreach (var pl in playerObject)
         {
-            player = playerObject.transform;
-            playerHealth = playerObject.GetComponent<EntityHealth>();
-            playerRigidbody = playerObject.GetComponent<Rigidbody>();
+            if (pl.GetComponent<EntityHealth>())
+            {
+                player = pl.transform;
+                playerHealth = pl.GetComponent<EntityHealth>();
+            }
         }
     }
 
     private void Update()
     {
         timeSinceLastAttack += Time.deltaTime;
-
+        //Debug.Log("" + (enemyController.CurrentState == EnemyState.Chasing) + " : " + (CanAttackPlayer()));
         if (enemyController.CurrentState == EnemyState.Chasing && CanAttackPlayer())
         {
             AttackPlayer();
+            //Debug.Log("Attacking player");
             timeSinceLastAttack = 0f;
         }
     }
@@ -56,32 +57,29 @@ public class EnemyAttack : MonoBehaviour
 
     private bool CanAttackPlayer()
     {
-        if (player == null) return false;
-
+        //Debug.Log("Checking Attack");
+        if (player == null)
+        {
+            //Debug.Log("player doesnt exist");
+            return false;
+        }
+        //Debug.Log("player does exist");
         bool isInRange = Vector3.Distance(transform.position, player.position) <= attackRange;
+        //Debug.Log("Is In Range: " + (isInRange));
         bool canAttack = timeSinceLastAttack >= attackCooldown;
-        bool hasLineOfSight = !Physics.Linecast(transform.position, player.position, LayerMask.GetMask("Default"));
+        //Debug.Log("Can Attack: " + (canAttack));
+        //bool hasLineOfSight = !Physics.Linecast(transform.position, player.position, LayerMask.GetMask("Default"));
+        //Debug.Log("Has Line Of Sight: " + (hasLineOfSight));
 
-        return isInRange && canAttack && hasLineOfSight;
+        //return isInRange && canAttack && hasLineOfSight;
+        return isInRange && canAttack;
     }
 
     private void AttackPlayer()
     {
         enemyController.ChangeState(nextAttackIsLeft ? EnemyState.AttackingL : EnemyState.AttackingR);
         nextAttackIsLeft = !nextAttackIsLeft;
-
-        // Damage the player
-        if (playerHealth)
-        {
-            playerHealth.TakeDamage(attackDamage);
-        }
-
-        // Apply knockback to the player
-        if (playerRigidbody)
-        {
-            Vector3 knockbackDirection = (player.position - transform.position).normalized;
-            playerRigidbody.AddForce(knockbackDirection * knockbackForce, ForceMode.Impulse);
-        }
+        playerHealth.TakeDamage(attackDamage);
     }
 
     #endregion METHODS

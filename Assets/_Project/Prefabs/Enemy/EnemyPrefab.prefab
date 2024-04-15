@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4510675208511621030}
-  - component: {fileID: 8211316503609518686}
+  - component: {fileID: 3242977361543374195}
   m_Layer: 0
   m_Name: EnemyPrefab
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 7231840319840467975}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8211316503609518686
+--- !u!114 &3242977361543374195
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,22 +43,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1062342513416770019}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2364862999a50ef4882e7e0af5e9f83c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c0c14df162ea71468149aa225462e46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Skelly: {fileID: 1472601196146939234}
   anchor: {fileID: 2167391729269899162}
-  targetGO: {fileID: 0}
-  _target: {fileID: 0}
   _speed: 15
-  _rotateSpeed: 95
-  AnchorHeight: 1
-  SkellySpinSpeed: -5
-  _maxDistancePredict: 100
-  _minDistancePredict: 5
-  _maxTimePrediction: 5
-  _deviationAmount: 50
-  _deviationSpeed: 2
+  AnchorHeight: 5
+  SkellySpinSpeed: 15
 --- !u!1 &1472601196146939234
 GameObject:
   m_ObjectHideFlags: 0

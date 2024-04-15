@@ -17,8 +17,6 @@ public class EnemyDeath : MonoBehaviour
     private void Awake()
     {
         entityHealth = GetComponent<EntityHealth>();
-
-        entityHealth.OnDied.AddListener(HandleDeath);
     }
 
     #endregion UNITY METHODS

@@ -7,7 +7,9 @@ public class Summoner : MonoBehaviour
 {
     #region FIELDS
 
+    [Header("Summoning Settings")]
     private HandManager HandManager;
+
     private GameObject Camera;
     private bool SpellReady;
     private SummoningSpell loadedSpell;
@@ -59,16 +61,10 @@ public class Summoner : MonoBehaviour
 
     public void shootSkelly()
     {
-        //instantiates a skelly
         var spawnPosition = transform.position + transform.forward * 2;
-        //flatten the spawn rotation so it just points in the direction of the camera
+
         var spawnRotation = Quaternion.Euler(0, Camera.transform.rotation.eulerAngles.y, 0);
         GameObject skelly = Instantiate(loadedSpell.SkellyPrefab, spawnPosition, spawnRotation);
-        var SkellyMaterial = skelly.GetComponentsInChildren<MeshRenderer>();
-        foreach (var item in SkellyMaterial)
-        {
-            item.material = loadedSpell.SpellMaterial;
-        }
 
         SpellCastReset();
     }
@@ -77,6 +73,7 @@ public class Summoner : MonoBehaviour
     {
         CurrentSpell.Clear();
         HandManager.SwitchHand(HandType.idle);
+
         SpellReady = false;
     }
 

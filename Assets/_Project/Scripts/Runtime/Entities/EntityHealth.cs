@@ -2,19 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class EntityHealth : MonoBehaviour
 {
     #region FIELDS
 
     public int maxHealth = 100;
-    private int currentHealth;
+    public int currentHealth;
+    public GameObject player;
 
     // UnityEvent that will be invoked when health changes
     public UnityEvent<int> OnHealthChanged;
-
-    // UnityEvent that will be invoked when the entity dies
-    public UnityEvent OnDied;
 
     #endregion FIELDS
 
@@ -25,6 +24,15 @@ public class EntityHealth : MonoBehaviour
         currentHealth = maxHealth;
 
         OnHealthChanged?.Invoke(currentHealth);
+    }
+
+    private void Update()
+    {
+        if (player.transform.position.y <= -25) // If the player falls off the map
+        {
+            Debug.Log("Player fell off the map" + player.transform.position.y);
+            SceneManager.LoadScene(0);
+        }
     }
 
     #endregion UNITY METHODS
@@ -41,13 +49,9 @@ public class EntityHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
-            Die();
+            Debug.Log("Player died");
+            SceneManager.LoadScene(0);
         }
-    }
-
-    private void Die()
-    {
-        OnDied?.Invoke();
     }
 
     #endregion METHODS

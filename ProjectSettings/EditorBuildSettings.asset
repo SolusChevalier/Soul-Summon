@@ -8,10 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Start.unity
     guid: 2ea11e81f67e59748afba8467d94384c
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/End.unity
-    guid: d454bf8b65d6b2445be255a0825e3208
+    path: Assets/Scenes/Adams Testing Evironment.unity
+    guid: 24753989a1bcbe245bf1847d763aa588
   m_configObjects: {}

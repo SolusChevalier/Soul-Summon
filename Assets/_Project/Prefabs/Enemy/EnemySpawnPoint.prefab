@@ -85,7 +85,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meleeEnemyPrefab: {fileID: 1062342513416770019, guid: e5c27922890cc6949a76dd94c2069616, type: 3}
-  rangedEnemyPrefab: {fileID: 1062342513416770019, guid: 0e0170e5805a6764bafad04fbb3e84e6, type: 3}
+  rangedEnemyPrefab: {fileID: 1062342513416770019, guid: 285134dd276aaea40bd79dc9fc55436d, type: 3}
+  MELEE_COUNT: 3
+  RANGED_COUNT: 3
+  SPAWN_DELAY: 2
 --- !u!1 &1773816010303347529
 GameObject:
   m_ObjectHideFlags: 0

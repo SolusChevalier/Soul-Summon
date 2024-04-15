@@ -9,9 +9,7 @@ public class SummoningSpell : ScriptableObject
 
     public List<HandType> SpellComponents;
     public string SpellName;
-    public int SpellManaCost;
     public GameObject SkellyPrefab;
-    public Material SpellMaterial;
 
     #endregion FIELDS
 
