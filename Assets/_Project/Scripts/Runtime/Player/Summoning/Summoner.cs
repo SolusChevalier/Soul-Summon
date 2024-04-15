@@ -7,14 +7,13 @@ public class Summoner : MonoBehaviour
 {
     #region FIELDS
 
-    public float CastingBuffer;
-    public HandManager HandManager;
-    public GameObject Camera;
-    public bool SpellReady;
-    public SummoningSpell loadedSpell;
+    private HandManager HandManager;
+    private GameObject Camera;
+    private bool SpellReady;
+    private SummoningSpell loadedSpell;
     public List<SummoningSpell> Spells = new List<SummoningSpell>();
-    public List<HandType> CurrentSpell = new List<HandType>();
-    public Dictionary<KeyCode, HandType> keyValuePairs = new Dictionary<KeyCode, HandType>();
+    private List<HandType> CurrentSpell = new List<HandType>();
+    private Dictionary<KeyCode, HandType> keyValuePairs = new Dictionary<KeyCode, HandType>();
 
     #endregion FIELDS
 
@@ -22,6 +21,8 @@ public class Summoner : MonoBehaviour
 
     public void Start()
     {
+        HandManager = GameObject.FindGameObjectWithTag("HandManager").GetComponent<HandManager>();
+        Camera = GameObject.FindGameObjectWithTag("Cam");
         keyValuePairs.Clear();
         keyValuePairs.Add(KeyCode.UpArrow, HandType.UpArrow);
         keyValuePairs.Add(KeyCode.RightArrow, HandType.RightArrow);
@@ -90,15 +91,11 @@ public class Summoner : MonoBehaviour
         {
             if (currentSpellStr == spell.GetComponentSpells())
             {
-                Debug.Log("Spell Ready");
                 loadSpell(spell);
                 return;
             }
             else
             {
-                string failLog = "Spell Failed:\nCurrentSpell : " + currentSpellStr + " - " + "Spell Components : " + spell.GetComponentSpells();
-
-                Debug.Log(failLog);
                 SpellReady = false;
             }
         }

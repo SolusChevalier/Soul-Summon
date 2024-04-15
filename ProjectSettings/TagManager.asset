@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Soul
   - Hand
+  - Terrain
+  - Environment
+  - Foliage
+  - Cam
+  - HandManager
   layers:
   - Default
   - TransparentFX
