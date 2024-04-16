@@ -149,7 +149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 05dc3925290995c48915d0f040c43079, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 05dc3925290995c48915d0f040c43079, type: 3}
       propertyPath: m_LocalPosition.z
@@ -230,7 +230,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75.7, y: 7}
+  m_AnchoredPosition: {x: 260.4, y: 19.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &793284189
@@ -441,7 +441,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2372492229695291108, guid: 3a9314a66bac563429e73cd964407836, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.1
+      value: -13.46
       objectReference: {fileID: 0}
     - target: {fileID: 2372492229695291108, guid: 3a9314a66bac563429e73cd964407836, type: 3}
       propertyPath: m_LocalPosition.z
@@ -996,6 +996,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1500573050
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 62.580894
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 62.580894
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 62.580894
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 699.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 365.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9545522
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.298044
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 34.68
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1294892128559850198, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_Range
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: -1294892128559850198, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_Intensity
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_Name
+      value: SkullCandle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5958438921693756439, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_Range
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 5958438921693756439, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_Intensity
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100320773420232829, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e30821f1d82e4524b800e1d6eccfa3cc, type: 2}
+    - target: {fileID: 8912049515002365231, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_Range
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912049515002365231, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
+      propertyPath: m_Intensity
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 491cf4af03c286a45896675f30f8264a, type: 3}
 --- !u!1 &1591638881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,7 +1221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -79, y: 34}
+  m_AnchoredPosition: {x: -394.1, y: 34}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1841681075
@@ -1176,8 +1273,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11.14
-  m_fontSizeBase: 11.14
+  m_fontSize: 18.12
+  m_fontSizeBase: 18.12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1532,3 +1629,4 @@ SceneRoots:
   - {fileID: 867183340}
   - {fileID: 538612244}
   - {fileID: 1877112115}
+  - {fileID: 1500573050}
