@@ -35,7 +35,7 @@ public class MusicManager : MonoBehaviour
                 PlayMusic(mainMenuMusic);
                 break;
 
-            case "Adams Testing Environment":
+            case "Game":
                 PlayMusic(gameSceneMusic);
                 break;
 
@@ -46,6 +46,7 @@ public class MusicManager : MonoBehaviour
 
     private void PlayMusic(AudioClip clip)
     {
+        audioSource.Stop();
         audioSource.clip = clip;
         audioSource.Play();
     }
