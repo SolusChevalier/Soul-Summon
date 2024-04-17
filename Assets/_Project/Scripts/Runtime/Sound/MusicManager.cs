@@ -10,7 +10,6 @@ public class MusicManager : MonoBehaviour
 
     public AudioClip mainMenuMusic;
     public AudioClip gameSceneMusic;
-    public AudioClip[] LevelsMusic;
     private AudioSource audioSource;
 
     #endregion FIELDS
@@ -32,23 +31,15 @@ public class MusicManager : MonoBehaviour
     {
         switch (scene.name)
         {
-            case "MainMenu":
+            case "Start":
                 PlayMusic(mainMenuMusic);
                 break;
 
-            case "GameScene":
+            case "Adams Testing Environment":
                 PlayMusic(gameSceneMusic);
                 break;
 
             default:
-                if (scene.name.StartsWith("Level"))
-                {
-                    int levelIndex = int.Parse(scene.name.Substring(5)) - 1;
-                    if (levelIndex < LevelsMusic.Length)
-                    {
-                        PlayMusic(LevelsMusic[levelIndex]);
-                    }
-                }
                 break;
         }
     }
@@ -57,6 +48,11 @@ public class MusicManager : MonoBehaviour
     {
         audioSource.clip = clip;
         audioSource.Play();
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     #endregion METHODS

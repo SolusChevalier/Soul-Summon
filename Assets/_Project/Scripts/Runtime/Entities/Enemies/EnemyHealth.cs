@@ -32,6 +32,7 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(int dam)
     {
         health -= dam;
+        SFXManager.Instance.playEnemyDamage();
     }
 
     #endregion METHODS

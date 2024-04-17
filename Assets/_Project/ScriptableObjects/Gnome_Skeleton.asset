@@ -15,3 +15,4 @@ MonoBehaviour:
   SpellComponents: 020000000400000002000000030000000400000001000000
   SpellName: Gnome Skeleton
   SkellyPrefab: {fileID: 8875484386881640216, guid: 33aa93370130c4a478dd94fdfab76098, type: 3}
+  spellSound: {fileID: 8300000, guid: 49056feae946f6b4f95bca16f7223eb9, type: 3}

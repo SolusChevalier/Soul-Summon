@@ -64,6 +64,10 @@ public class Summoner : MonoBehaviour
 
         var spawnRotation = Quaternion.Euler(0, Camera.transform.rotation.eulerAngles.y, 0);
         GameObject skelly = Instantiate(loadedSpell.SkellyPrefab, spawnPosition, spawnRotation);
+        if (loadedSpell.spellSound != null)
+        {
+            SFXManager.Instance.PlaySFX(loadedSpell.spellSound);
+        }
 
         SpellCastReset();
     }

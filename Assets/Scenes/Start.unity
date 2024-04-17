@@ -391,7 +391,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d401f4ea0a77934995956c619593ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 0}
+  EnemyDamageSound:
+  - {fileID: 8300000, guid: 261b40e9de2801d46aec112f9b5200e4, type: 3}
+  - {fileID: 8300000, guid: 03f7a3f599e2538439daad88fa127a33, type: 3}
+  - {fileID: 8300000, guid: 0c4a0e44ebe9f584587c9a89a3ab81ea, type: 3}
+  EnemyAttackSound:
+  - {fileID: 8300000, guid: 4fc902b562728ee40b44c510fbf5da06, type: 3}
+  - {fileID: 8300000, guid: 261b40e9de2801d46aec112f9b5200e4, type: 3}
 --- !u!82 &965450847
 AudioSource:
   m_ObjectHideFlags: 0
@@ -737,9 +743,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4fbfca6d7ae2f43a994fa106fc7388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenuMusic: {fileID: 0}
-  gameSceneMusic: {fileID: 0}
-  LevelsMusic: []
+  mainMenuMusic: {fileID: 8300000, guid: 895ad145619b77643833dc12939c1b0a, type: 3}
+  gameSceneMusic: {fileID: 8300000, guid: 4b524b10d29a46b46ac16ac4d693ce1c, type: 3}
 --- !u!82 &1334613026
 AudioSource:
   m_ObjectHideFlags: 0

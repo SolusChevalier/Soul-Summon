@@ -80,6 +80,7 @@ public class EnemyAttack : MonoBehaviour
         enemyController.ChangeState(nextAttackIsLeft ? EnemyState.AttackingL : EnemyState.AttackingR);
         nextAttackIsLeft = !nextAttackIsLeft;
         playerHealth.TakeDamage(attackDamage);
+        SFXManager.Instance.playEnemyAttack();
     }
 
     #endregion METHODS

@@ -15,3 +15,4 @@ MonoBehaviour:
   SpellComponents: 02000000010000000400000003000000
   SpellName: Sharknado
   SkellyPrefab: {fileID: 8875484386881640216, guid: db55afea435875441b0a0f168866b57b, type: 3}
+  spellSound: {fileID: 8300000, guid: 49056feae946f6b4f95bca16f7223eb9, type: 3}

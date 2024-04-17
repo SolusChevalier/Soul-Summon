@@ -10,6 +10,7 @@ public class SummoningSpell : ScriptableObject
     public List<HandType> SpellComponents;
     public string SpellName;
     public GameObject SkellyPrefab;
+    public AudioClip spellSound;
 
     #endregion FIELDS
 
