@@ -127,8 +127,8 @@ MonoBehaviour:
   sightRange: 20
   chaseDuration: 5
   patrolPoints: []
-  patrolSpeed: 8
-  chaseSpeed: 12
+  patrolSpeed: 6
+  chaseSpeed: 8
 --- !u!114 &4627114641374795105
 MonoBehaviour:
   m_ObjectHideFlags: 0
